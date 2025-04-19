@@ -14,7 +14,7 @@ import authStore from 'stores/auth.store'
 
 const LoginForm: FC = () => {
   const navigate = useNavigate()
-  const { handleSubmit, errors, control, reset } = useLoginForm()
+  const { handleSubmit, errors, control } = useLoginForm()
   const [apiError, setApiError] = useState('')
   const [showError, setShowError] = useState(false)
 
@@ -85,7 +85,7 @@ const LoginForm: FC = () => {
         />
         <div className="display-flex justify-content-between align-items-center mb-2">
           <p className="text-decoration-none text-end">
-            Don{"'"}t have an account yet?
+            Don{'\''}t have an account yet?
           </p>
           <Link className="text-decoration-none text-end" to={routes.SIGNUP}>
             Create account
