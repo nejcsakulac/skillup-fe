@@ -121,7 +121,7 @@ const DashboardProducts: FC = () => {
                 ))}
                 </tbody>
               </Table>
-              {data?.data.data.meta.last_page > 1 && (
+              {data?.data.meta.last_page > 1 && (
                 <div>
                   <Button
                     className="me-2"
